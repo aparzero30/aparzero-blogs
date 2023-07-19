@@ -3,7 +3,7 @@ import "./App.css";
 import MainPage from "./pages/main/main";
 import LoginPage from "./pages/login/login";
 import loginAction from "./components/loginform/loginaction";
-import CreatePage from "./pages/create/CreatePage";
+import CreatePage from "./pages/create/createpage";
 import CreateLoader from "./pages/create/createloader";
 
 const router = createBrowserRouter([
