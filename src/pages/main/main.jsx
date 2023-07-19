@@ -3,7 +3,7 @@ import Wrapper from "../../ui/wrapper/wrapper";
 const MainPage = () => {
   return (
     <Wrapper>
-      <h1>hello</h1>
+      <h1>this is not done yet tho</h1>
     </Wrapper>
   );
 };
