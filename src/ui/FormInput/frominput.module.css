@@ -1,0 +1,36 @@
+.inputWrapper {
+  height: max-content;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1.3px;
+  border-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.1);
+}
+.inputWrapper input {
+  width: 19vw;
+  height: 4vh;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2vh;
+  font-family: "Poppins";
+  text-indent: 1vw;
+}
+
+.inputWrapper input:focus {
+  outline: none;
+}
+@media screen and (max-width: 800px) {
+  .inputWrapper {
+    width: 90%;
+  }
+  .inputWrapper input {
+    width: 90%;
+  }
+}
