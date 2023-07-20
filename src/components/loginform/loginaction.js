@@ -8,8 +8,8 @@ async function loginAction({ request }) {
     password: data.get("userPassword"),
   };
 
-  // let url = "http://localhost:8080/api/v1/auth/authenticate";
-  let url = " https://aparzero-blog-be.onrender.com/api/v1/auth/authenticate";
+  let url = "http://localhost:8080/api/v1/auth/authenticate";
+  // let url = " https://aparzero-blog-be.onrender.com/api/v1/auth/authenticate";
 
   const response = await fetch(url, {
     method: method,
@@ -33,7 +33,7 @@ async function loginAction({ request }) {
 
   const responseData = await response.json();
   localStorage.setItem("JWT-TOKEN", responseData.token);
-  return redirect("/create");
+  return redirect("/admin");
 }
 
 export default loginAction;

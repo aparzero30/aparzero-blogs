@@ -3,8 +3,8 @@ import "./App.css";
 import MainPage from "./pages/main/main";
 import LoginPage from "./pages/login/login";
 import loginAction from "./components/loginform/loginaction";
-import CreatePage from "./pages/create/createpage";
-import CreateLoader from "./pages/create/createloader";
+import AdminPage from "./pages/admin/admin";
+import AdminLoader from "./pages/admin/adminloader";
 
 const router = createBrowserRouter([
   {
@@ -20,9 +20,9 @@ const router = createBrowserRouter([
         action: loginAction,
       },
       {
-        path: "/create",
-        element: <CreatePage />,
-        loader: CreateLoader,
+        path: "/admin",
+        element: <AdminPage />,
+        loader: AdminLoader,
       },
     ],
   },

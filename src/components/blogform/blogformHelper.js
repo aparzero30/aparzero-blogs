@@ -2,8 +2,8 @@ import { json } from "react-router-dom";
 const BlogFormHelper = async (blog) => {
   const jwt = localStorage.getItem("JWT-TOKEN");
 
-  // let url = "http://localhost:8080/writer/create";
-  let url = " https://aparzero-blog-be.onrender.com/writer/create";
+  let url = "http://localhost:8080/writer/create";
+  // let url = " https://aparzero-blog-be.onrender.com/writer/create";
 
   const response = await fetch(url, {
     method: "POST",
@@ -21,7 +21,7 @@ const BlogFormHelper = async (blog) => {
   }
   // Handle successful response
   const data = await response.json();
-
+  console.log(data);
   return data;
 };
 

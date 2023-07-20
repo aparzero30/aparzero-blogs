@@ -1,12 +1,12 @@
 import { redirect } from "react-router-dom";
 
-const CreateLoader = () => {
+const AdminLoader = () => {
   const jwt = localStorage.getItem("JWT-TOKEN");
 
   if (!jwt || jwt === null) {
     return redirect("/login");
   }
 
-  return "hello";
+  return "in session";
 };
-export default CreateLoader;
+export default AdminLoader;

@@ -46,14 +46,13 @@ const BlogForm = () => {
     const currentDate = new Date();
     const dayIndex = currentDate.getDay();
     const day = daysOfWeek[dayIndex];
-
+    console.log("hello");
     const data = await BlogFormHelper({ title, day, image, body });
     console.log(data);
   };
 
   return (
     <form className={classes.form} onSubmit={submitBlog}>
-      <h1>aparzero</h1>
       <FormInput
         label="Title"
         type="title"
@@ -61,8 +60,14 @@ const BlogForm = () => {
         required={true}
         onChange={titleChange}
       />
+      <textarea rows={5} onChange={bodyChange} placeholder="type here..." />
       <div className={classes.upload}>
-        <input type="file" accept="image/*" onChange={handleUpload} />
+        <input
+          type="file"
+          accept="image/*"
+          onChange={handleUpload}
+          className={classes.uploadbtn}
+        />
       </div>
 
       <div
@@ -74,7 +79,6 @@ const BlogForm = () => {
       >
         Preview
       </div>
-      <textarea rows={5} onChange={bodyChange} placeholder="type here..." />
 
       <button type="submit">PUBLISH</button>
     </form>
