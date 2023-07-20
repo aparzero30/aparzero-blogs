@@ -1,0 +1,52 @@
+.blogcard {
+  min-width: 25vw;
+  max-width: 25vw;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1vh;
+  border-width: 1px;
+  background-color: rgb(238, 231, 231);
+  color: black;
+  font-family: "Comic Neue";
+}
+.blogcard h3,
+h4,
+h5 {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.blogcard h4,
+h5 {
+  font-style: italic;
+}
+.blogcard h3 {
+  font-weight: bold;
+  font-family: "Lato";
+}
+
+.preview {
+  margin-top: 1vh;
+  min-height: 40vh;
+  width: 94%;
+  background-size: 100% 100%;
+  background-position: center;
+  filter: blur(2px) grayscale(100%);
+}
+.blogcard p {
+  width: 100%;
+  text-indent: 30 px;
+}
+
+@media screen and (max-width: 800px) {
+  .blogcard {
+    min-width: 90vw;
+    margin-top: 4vh;
+  }
+  .preview {
+    width: 100%;
+  }
+}
