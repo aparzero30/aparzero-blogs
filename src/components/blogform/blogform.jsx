@@ -9,6 +9,8 @@ const BlogForm = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
 
+  const [loading, setLoading] = useState(false);
+
   const titleChange = (event) => {
     setTitle(event.target.value);
   };
@@ -32,6 +34,9 @@ const BlogForm = () => {
   };
 
   const submitBlog = async (event) => {
+    setLoading((prev) => {
+      !prev;
+    });
     event.preventDefault();
 
     const daysOfWeek = [
@@ -46,9 +51,11 @@ const BlogForm = () => {
     const currentDate = new Date();
     const dayIndex = currentDate.getDay();
     const day = daysOfWeek[dayIndex];
-    console.log("hello");
     const data = await BlogFormHelper({ title, day, image, body });
     console.log(data);
+    setLoading((prev) => {
+      !prev;
+    });
   };
 
   return (
@@ -80,7 +87,12 @@ const BlogForm = () => {
         Preview
       </div>
 
-      <button type="submit">PUBLISH</button>
+      {!loading && <button type="submit">PUBLISH</button>}
+      {loading && (
+        <div className={classes.loading}>
+          <i className="fa-brands fa-react fa-spin" />
+        </div>
+      )}
     </form>
   );
 };

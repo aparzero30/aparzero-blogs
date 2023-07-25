@@ -36,6 +36,21 @@
   border-width: 1px;
 }
 
+.loading {
+  height: 6vh;
+  width: 20vw;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.loading i {
+  font-size: 3vh;
+}
+
 .form h1 {
   color: white;
 }
@@ -57,7 +72,8 @@
     width: 100%;
     box-shadow: none;
   }
-  .form button {
+  .form button,
+  .loading {
     margin-top: 2vh;
     width: 90%;
   }

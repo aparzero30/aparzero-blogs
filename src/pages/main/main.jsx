@@ -6,11 +6,11 @@ import BlogCard from "../../components/blogcard/blogcard";
 const MainPage = () => {
   const [latestBlog, setLatestBlog] = useState({
     id: 0,
-    title: "Loading...",
-    date: "Loading...",
-    day: "Loading...",
-    image: "Loading...",
-    body: "Loading...",
+    title: "This is hosted for free...",
+    date: "this may take a while...",
+    day: "this may take a while...",
+    image: "this may take a while...",
+    body: "this may take a while...",
   });
 
   useEffect(() => {

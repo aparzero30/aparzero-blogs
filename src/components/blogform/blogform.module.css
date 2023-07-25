@@ -63,7 +63,6 @@
   border: none;
   cursor: pointer;
   user-select: none;
-
   font-family: "Poppins";
   font-size: 2vh;
   color: white;
@@ -71,6 +70,21 @@
   width: 20vw;
   margin-top: 1vw;
   background-color: #3648785f;
+}
+
+.loading {
+  margin-top: 1vh;
+  height: 6vh;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #3648785f;
+}
+
+.loading i {
+  font-size: 4vh;
 }
 
 .form h1 {
@@ -96,7 +110,8 @@
     margin-top: 10vh;
     margin-left: 0;
   }
-  .form button {
+  .form button,
+  loading {
     margin-top: 2vh;
     width: 90%;
   }

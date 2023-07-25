@@ -6,4 +6,12 @@
   height: 100vh;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.584);
+  background-image: url("https://th.bing.com/th/id/OIP.UbFoaELDyjCbQbCuf0KR-wHaFj?pid=ImgDet&rs=1");
+  background-size: 100% 100%;
+  background-position: center;
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    background-image: url("https://image.freepik.com/free-photo/white-crumpled-paper-texture-for-background_1373-162.jpg");
+  }
 }

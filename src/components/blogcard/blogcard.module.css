@@ -7,9 +7,11 @@
   flex-direction: column;
   padding: 1vh;
   border-width: 1px;
-  background-color: rgb(238, 231, 231);
+  background-color: white;
+  /* background-color: rgb(238, 231, 231); */
   color: black;
   font-family: "Comic Neue";
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .blogcard h3,
 h4,
@@ -27,8 +29,14 @@ h5 {
   font-weight: bold;
   font-family: "Lato";
 }
+.blogcard h2 {
+  color: black;
+  font-weight: bold;
+  font-family: "Lato";
+}
 
 .preview {
+  background-color: antiquewhite;
   margin-top: 1vh;
   min-height: 40vh;
   width: 94%;
@@ -40,7 +48,23 @@ h5 {
   width: 100%;
   text-indent: 30 px;
 }
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.header h3,
+h2 {
+  min-width: 12vw;
+}
 
+.header h2 {
+  text-align: right;
+  font-family: "Lato";
+  font-weight: bolder;
+  margin: 0;
+}
 @media screen and (max-width: 800px) {
   .blogcard {
     min-width: 90vw;
@@ -48,5 +72,9 @@ h5 {
   }
   .preview {
     width: 100%;
+  }
+  .header h3,
+  h2 {
+    min-width: 45vw;
   }
 }

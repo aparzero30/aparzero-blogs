@@ -3,7 +3,11 @@ import classes from "./blogcard.module.css";
 const BlogCard = (props) => {
   return (
     <div className={classes.blogcard}>
-      <h3>{props.blog.title}</h3>
+      <div className={classes.header}>
+        <h3>{props.blog.title}</h3>
+        <h2>#{props.blog.id}</h2>
+      </div>
+
       <h4>{props.blog.day}</h4>
       <div
         className={classes.preview}
