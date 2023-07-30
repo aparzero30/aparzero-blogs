@@ -7,9 +7,7 @@ const LoginForm = () => {
   const [loading, setLoading] = useState(false);
 
   const changeLoadingHandler = () => {
-    setLoading((prev) => {
-      !prev;
-    });
+    setLoading(true);
   };
 
   console.log(loading);
